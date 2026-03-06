@@ -1,4 +1,5 @@
 class Bike{
-	double price =6565;
-	String bikeName;
+	String name;
+	String type;
+	double price;
 }
