@@ -1,35 +1,32 @@
-class File{ 
-	int numberOfFile;
-	String fileName;
-	double fileSize;
-	boolean javaFile;
-	boolean timeModified;;
-	FileType type;
-	FileName name;
-	FileSort sort;
-	FileView view;
-	FileDetailes detailes;
+class File{
+	int size = 23;
+	int count = 5;
+	String fileType = "text";
+	boolean store = true;
+	int copy = 6;
+	int noOfFiles;
+	HTML html;
+	CSS css;
+	JavaScript javaScript;
+	Java java;
+	CProgramming cProgramming;
 	
-	File(int numberOfFile,String fileName,double fileSize,boolean javaFile,boolean timeModified,
-	FileType type,FileName name,FileSort sort,FileView view,FileDetailes detailes)
-	{
-			this.numberOfFile=numberOfFile;
-			this.fileName=fileName;
-			this.fileSize=fileSize;
-			this.javaFile=javaFile;
-			this.timeModified=timeModified;
-			this.type=type;
-			this.name=name;
-			this.sort=sort;
-			this.view=view;
-			this.detailes=detailes;
-			System.out.println("Access the above primitive and non Primitive instance variables");
+	File(int size,int count,String fileType,boolean store,int copy,int noOfFiles, HTML html, CSS css, JavaScript javaScript, Java java, CProgramming cProgramming){
+		this.size=size;
+		this.count=count;
+		this.fileType=fileType;
+		this.store=store;
+		this.copy=copy;
+		this.noOfFiles=noOfFiles;
+		this.html=html;
+		this.css=css;
+		this.javaScript=javaScript;
+		this.java=java;
+		this.cProgramming=cProgramming;
+		
+		System.out.println("created File with noOfFiles html css javaScript java cProgramming using const");
+		
+		
 	}
-	void getInfo(){
-		System.out.println("File Information:"+this.fileName);
-	}
-	
-	
-	
 	
 }

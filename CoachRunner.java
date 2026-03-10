@@ -1,13 +1,13 @@
-class CoachRunner{
-	public static void main(String... values){
-		Tennis tennis=new Tennis();
-		Badminton badminton=new Badminton();
-		Cricket cricket=new Cricket();
-		Kabbaddi kabbaddi = new Kabbaddi();
-		FootBall footBall=new FootBall();
-		Coach coach=new Coach("Girish",54,10000,"Badminton",true,tennis,badminton,cricket,kabbaddi,footBall);
-		
+class CoachRunner {
+	public static void main(String[] args) {
+		CoachType type = new CoachType();
+		CoachExperience experience = new CoachExperience();
+		CoachSchedule schedule = new CoachSchedule();
+		CoachPerformance performance = new CoachPerformance();
+		CoachTeam team = new CoachTeam();
 
-
+		Coach myCoach = new Coach("Rahul Dravid", 500000.0, true, "Indian",
+		                          type, experience, schedule, performance, team);
+		myCoach.getInfo();
 	}
 }

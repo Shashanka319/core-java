@@ -1,6 +1,8 @@
-class TeaType{
+class TeaType {
 	String name;
-	int count;
-	double price;
-	
+	String origin;
+	void getTeaType(String name, String origin) {
+		System.out.println("Tea Name: " + name);
+		System.out.println("Origin: " + origin);
+	}
 }

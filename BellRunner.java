@@ -1,11 +1,13 @@
-class BellRunner{
-	public static void main(String[] values){
-		BellType type=new BellType();
-		BellColor color=new BellColor();
-		BellCompany company=new BellCompany();
-		Clock clock = new Clock();
-		Cycle cycle = new Cycle();
-		Bell bell = new Bell(1,"Shree Ganesh",2,500,true,type,color,company,clock,cycle);
-	
+class BellRunner {
+	public static void main(String[] args) {
+		BellType type = new BellType();
+		BellMaterial material = new BellMaterial();
+		BellSound sound = new BellSound();
+		BellClapper clapper = new BellClapper();
+		BellMount mount = new BellMount();
+
+		Bell bell = new Bell("Golden Chime", 500.0, true, "Varanasi", 
+		                     type, material, sound, clapper, mount);
+		bell.getInfo();
 	}
 }
