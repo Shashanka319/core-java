@@ -1,19 +1,19 @@
 class CylinderRunner {
-    public static void main(String[] values) {
-        String[] cylinderNames = new String[10];
-        Cylinder cylinder = new Cylinder(cylinderNames);
-        
-        cylinder.saveCylinderName("Indane");
-        cylinder.saveCylinderName("HP");
-        cylinder.saveCylinderName("Super Gas");
-        cylinder.saveCylinderName("Reliance");
-        cylinder.saveCylinderName("GoGas");
-        cylinder.saveCylinderName("BharathGas");
-        cylinder.saveCylinderName("Total Gas");
-        cylinder.saveCylinderName("Agis Gas");
-        cylinder.saveCylinderName("Mahanagar Gas");
-        cylinder.saveCylinderName("Adani Gas");
-		
-		cylinder.searchCylindername("HP");
+    public static void main(String[] args) {
+        String[] storage = new String[4];
+        Cylinder myCylinder = new Cylinder(storage);
+
+        myCylinder.saveCylinder("LPG");
+        myCylinder.saveCylinder("Oxygen");
+        myCylinder.saveCylinder("Nitrogen");
+        myCylinder.saveCylinder("Helium");
+
+        myCylinder.searchCylinder("Oxygen");
+
+        myCylinder.update(0, "Propane");
+        myCylinder.update("Nitrogen", "Argon");
+
+        myCylinder.delete(3);
+        myCylinder.delete("Oxygen");
     }
 }

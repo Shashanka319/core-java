@@ -14,5 +14,13 @@ class TreeRunner{
 		tree.saveTreename("Tamarind");
 		tree.searchTreeName("Neem");
 		tree.searchTreeName("Bambo");
+		
+		tree.update(2,"Arecha Tree");
+		tree.update("Neem","Arecha Tree");
+		
+		tree.delete(2);
+		tree.delete("Sandalwood");
+		
+		
 	}
 }
