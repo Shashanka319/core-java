@@ -11,7 +11,7 @@ class PastaRunner {
     
         myPasta.searchPasta("Spaghetti");
 
-        myPasta.update(2, "Farfalle"); // Updates Fusilli
+        myPasta.update(2, "Farfalle"); 
         myPasta.update("Macaroni", "Ravioli");
 
         

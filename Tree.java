@@ -112,7 +112,7 @@ class Tree{
 			   for(String value:this.treeNames){
 				   System.out.println("Checking index"+index+":"+value);
 				   if(value != null &&value==name){
-					   String deleted=this.treeNames[index;
+					   String deleted=this.treeNames[index];
 					   this.treeNames[index]=null;
 					   System.out.println("Deleted"+deleted+"from index:"+index);
 					   return deleted;
