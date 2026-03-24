@@ -15,22 +15,18 @@ class SteelRunner
 		storeSteel.getSteelName("Mukand Steel");
 		storeSteel.getSteelName("Visa Steel");
 		storeSteel.getSteelName("Kirloskar Steel");
-		System.out.println("-------------------");
 		
 		System.out.println("Search Found");
         boolean found = storeSteel.searchSteelName("Jindal Steel");
         System.out.println("Result: " + found);
-		System.out.println("-------------------");
 
         System.out.println("Search Not Found");
         boolean notFound = storeSteel.searchSteelName("POSCO Steel"); 
         System.out.println("Result: " + notFound);
-		System.out.println("-------------------");
 
         System.out.println("Search Null");
         boolean nullCheck = storeSteel.searchSteelName(null);
         System.out.println("Result: " + nullCheck);
-		System.out.println("-------------------");
 		
 		System.out.println("UPDATING BY INDEX");
 		boolean updatedByIndex = storeSteel.update(2, "ArcelorMittal Steel");

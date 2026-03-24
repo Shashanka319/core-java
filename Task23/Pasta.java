@@ -21,7 +21,7 @@ class Pasta {
     boolean searchPasta(String pastaName) {
         if (pastaName != null && pastaTypes != null) {
             for (String item : pastaTypes) {
-                if (pastaName.equals(item)) {
+                if (pastaName==item) {
                     System.out.println("Found Pasta: " + pastaName);
                     return true;
                 }
