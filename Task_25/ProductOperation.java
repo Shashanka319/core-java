@@ -120,12 +120,29 @@ class ProductOperation{
 		}
 		return false;
 	}
-	boolean get(String type)
+	void displayAllProducts(Product product){
+		if(this.products!=null&& product!=null){
+			System.out.println("Display All Products");
+			int index=this.products.length-1;
+			if(this.currentIndex<=index){
+				this.products[currentIndex]=product;
+				System.out.println("Display the Product Information:");
+				product.productInfo();
+				currentIndex++;
+			}else{
+				System.out.println("Array is Full Can't Display");
+			}
+			
+		}else{
+			System.out.println("products and product are Null Check Once");
+		}
+	}
+	boolean get(ProductType type)
 	{
 		if(products!=null&& type!=null){
 			for(Product get:products){
 				if(get!=null){
-					System.out.println("Proceed to check the id and expire of product");
+					System.out.println("Proceed to check the Product Type In Product");
 					if(get.productType==type){
 						System.out.println("Product Type is Found:"+type);
 						get.productInfo();
@@ -138,5 +155,22 @@ class ProductOperation{
 		}
 		return false;
 	}
-	
+	boolean get(ProductWarrentyYear wareentyYear)
+	{
+		if(products!=null&& wareentyYear!=null){
+			for(Product get:products){
+				if(get!=null){
+					System.out.println("Proceed to check the Product Warrenty Years..");
+					if(get.productWarrentyYear==wareentyYear){
+						System.out.println("Product wareentyYear is Found:"+wareentyYear);
+						get.productInfo();
+						
+					}else{
+						System.out.println("Product wareentyYear is Not found");
+					}
+				}
+			}
+		}
+		return false;
+	}
 }

@@ -139,8 +139,35 @@ class ProductRunner{
 		System.out.println("------------>>>>>>>>>>>>");
 		store.check(1001,false);
 		
+		System.out.println("--------------->>>>>>>>>>>>>>>>>>>>");
+		Product[] productDisplay=new Product[100];
+		ProductOperation display=new ProductOperation(productDisplay);
+		display.displayAllProducts(product);
+		display.displayAllProducts(product1);display.displayAllProducts(product);
+		display.displayAllProducts(product2);
+		display.displayAllProducts(product3);
+		display.displayAllProducts(product4);
+		display.displayAllProducts(product5);
+		display.displayAllProducts(product6);
+		display.displayAllProducts(product7);
+		display.displayAllProducts(product8);
+		display.displayAllProducts(product9);
+		display.displayAllProducts(product10);
+		display.displayAllProducts(product11);
+		display.displayAllProducts(product13);
+		display.displayAllProducts(product14);
+		display.displayAllProducts(product15);
+		display.displayAllProducts(product16);
+		display.displayAllProducts(product17);
+		display.displayAllProducts(product18);
+		display.displayAllProducts(product19);
+		display.displayAllProducts(product20);
+		
 		System.out.println("--------------->>>>>>>>>>>");
-		store.get(productType.CLOTHES);
+		store.get(ProductType.CLOTHES);
+		
+		System.out.println("----------->>>>>>>>>>>>>>>>>>");
+		store.get(ProductWarrentyYear.ONE);
 		
 		
 	}
