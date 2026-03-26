@@ -26,7 +26,7 @@ class ProductOperation{
 	}
 	void save(Product[] matireals){
 		
-		if(products.length<10){
+		if(products.length<=10){
 			System.out.println("Start to Storing the Products");
 			int index= this.products.length-1;
 			for(Product store:this.products){
@@ -123,16 +123,11 @@ class ProductOperation{
 	void displayAllProducts(Product product){
 		if(this.products!=null&& product!=null){
 			System.out.println("Display All Products");
-			int index=this.products.length-1;
-			if(this.currentIndex<=index){
-				this.products[currentIndex]=product;
-				System.out.println("Display the Product Information:");
-				product.productInfo();
-				currentIndex++;
-			}else{
-				System.out.println("Array is Full Can't Display");
+			for(Product info:this.products){
+				if(info!=null){
+				info.productInfo();
+				}
 			}
-			
 		}else{
 			System.out.println("products and product are Null Check Once");
 		}
@@ -158,13 +153,12 @@ class ProductOperation{
 	boolean get(ProductWarrentyYear wareentyYear)
 	{
 		if(products!=null&& wareentyYear!=null){
-			for(Product get:products){
-				if(get!=null){
+			for(Product ref:products){
+				if(ref!=null){
 					System.out.println("Proceed to check the Product Warrenty Years..");
-					if(get.productWarrentyYear==wareentyYear){
+					if(ref.productWarrentyYear==wareentyYear){
 						System.out.println("Product wareentyYear is Found:"+wareentyYear);
-						get.productInfo();
-						
+						ref.productInfo();
 					}else{
 						System.out.println("Product wareentyYear is Not found");
 					}
