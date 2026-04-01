@@ -7,8 +7,10 @@ class ComputerRunner{
 		
 		Computer computer = new Computer();
 		computer.install(browser);
+		
 		System.out.println("Inherited the One subClass from SuperClass");
 		computer.install(chromBrowser);
+		
 		System.out.println("Inherited the Two subClass from SuperClass");
 		computer.install(mobileChromeBrowser);
 		
