@@ -1,0 +1,55 @@
+Scenario Of Cricket Dachboard
+
+Player(Class)
+Properties:
+1.name[]
+2.age
+3.jercyNo
+4.Team
+5.Type
+6.Runs[]
+7.RunRate[]
+8.Wickets[]
+9.ManOftheMatch[]
+Constructor(){
+}
+void playerInfo(){
+}
+
+
+Team(Class)
+Properties:
+1.TeamName
+2.Size
+3.NoOfBatsMan
+5.BatsManName
+6.NoOfBowler
+7.BowlerName
+8.NoOfAllRounder
+9.AllRounderName
+10.CoachName
+11.CaptainName
+12.WiseCaptain
+13.Management
+Constructor(){
+}
+void teamInfo(){
+}
+
+
+Match(Class)
+Properties:
+1.TeamName1
+2.TeamName2
+3.CaptainName1
+4.CaptainName2
+5.Location
+6.Toos
+7.MainUmpire
+8.LegUmpire
+9.3rdUmpire
+Constructor(){
+}
+void matchInfo(){
+}
+10.Results
