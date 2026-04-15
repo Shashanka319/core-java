@@ -5,6 +5,5 @@ public class CourseRunner {
         Course course=new Course();
         course.courseInfo();
         course.feesInfo();
-        course.oopsInJav();
     }
 }
