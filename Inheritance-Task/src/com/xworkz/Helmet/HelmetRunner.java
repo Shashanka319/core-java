@@ -6,14 +6,14 @@ public class HelmetRunner {
         double[] prices = {400, 239, 250, 400};
         System.out.println("parent Class Information");
         Helmet helmet = new Helmet(HelmetType.NORMAL, helmetShop, prices, true, true);
-        helmet.getHelmetShop();
-        helmet.setGlass();
+
+
         System.out.println(helmet.toString());
         System.out.println("Child Class Inforamtion");
         CircleHelmet circleHelmet = new CircleHelmet(HelmetType.NORMAL, helmetShop, prices, true, true, "Circle", 300);
-        circleHelmet.getHelmetShop();
-        circleHelmet.setGlass();
-        System.out.println(circleHelmet.circleHelmet.toString());
+
+
+        System.out.println(circleHelmet.toString());
     }
 
 }
