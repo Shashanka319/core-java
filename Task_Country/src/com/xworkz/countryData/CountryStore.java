@@ -3,8 +3,15 @@ package com.xworkz.countryData;
 public class CountryStore {
     Country[] countries;
     int currentIndex;
+<<<<<<< HEAD
     CountryStore(Country[] countries){
         this.countries=countries;
+=======
+
+    public CountryStore(Country[] countries) {
+        this.countries = countries;
+
+>>>>>>> ba47bc0 (Task-updated)
     }
     public void save(Country country){
         System.out.println("Ex");
@@ -20,7 +27,28 @@ public class CountryStore {
 
             }
         }
+<<<<<<< HEAD
 
 
     }
+=======
+    }
+    boolean search(String names){
+        if(countries!=null && names!=null){
+            for(Country country:this.countries){
+                if(country!=null){
+                    System.out.println("Country is not null proceed to Search...");
+                    if(country.name== names){
+                        System.out.println("Country name is Found:"+country.name);
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+
+
+>>>>>>> ba47bc0 (Task-updated)
 }

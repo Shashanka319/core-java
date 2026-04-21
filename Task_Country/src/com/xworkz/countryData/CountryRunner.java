@@ -13,6 +13,11 @@ public class CountryRunner {
         Collector collector8 = new Collector("Dr. Kumar",2015);
         Collector collector9 = new Collector("Shri Prabhuling Kavalikatti",2015);
 
+<<<<<<< HEAD
+=======
+        Collector[] collectors={collector,collector1};
+
+>>>>>>> ba47bc0 (Task-updated)
 
 
         District district = new District("Davanagere",collector);
@@ -39,23 +44,80 @@ public class CountryRunner {
         City city9 = new City("Shivmoga",1,districts);
 
         City[] cities = {city,city1,city2,city3,city4,city5,city6,city7,city8,city9};
+<<<<<<< HEAD
         State state = new State("Karnataka",6.91,cities);
 
 
 
 
 
+=======
+
+        State state = new State("Karnataka",6.91,cities);
+        State state1 = new State("Telangana",6.91,cities);
+>>>>>>> ba47bc0 (Task-updated)
 
         Address address = new Address(2,"577215",state);
 
         President president = new President("Droupadi Murmu",72,address);
 
+<<<<<<< HEAD
         State[] states = {state};
         Country country = new Country("India","Dropadi Murmu", states);
         Country[] countries = new Country[10];
         CountryStore countryStore = new CountryStore(countries);
         countryStore.save(country);
         country.countryInfo();
+=======
+        State[] states = {state,state1};
+        Country country = new Country("India","president",states);
+        Country country1 = new Country("England","president",states);
+        Country country2 = new Country("India","president",states);
+        Country country3 = new Country("India","president",states);
+
+
+        Country[] countries = new Country[10];
+        CountryStore countryStore = new CountryStore(countries);
+        countryStore.save(country);
+        System.out.println();
+        System.out.println("------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+
+        countryStore.save(country1);
+        System.out.println();
+        System.out.println("--------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+
+        countryStore.search("India");
+        System.out.println();
+        System.out.println("----------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+
+        StateOperation stateOperation = new StateOperation(states,cities,collectors,countries);
+        stateOperation.check("Karnataka");
+        System.out.println();
+        System.out.println("----------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.");
+
+        stateOperation.checks("Karnataka");
+        System.out.println();
+        System.out.println("-------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+
+        stateOperation.search("Davanagere");
+        stateOperation.searchs("Shri GangadharaSwamy");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> ba47bc0 (Task-updated)
 
 
 

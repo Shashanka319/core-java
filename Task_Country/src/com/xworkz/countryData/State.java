@@ -23,4 +23,8 @@ public class State {
     public String toString() {
         return this.name;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ba47bc0 (Task-updated)
 }

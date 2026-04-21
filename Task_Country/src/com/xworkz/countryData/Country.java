@@ -17,5 +17,9 @@ public class Country {
             if(state!=null)
                 state.stateInfo();
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ba47bc0 (Task-updated)
     }
 }
