@@ -8,7 +8,7 @@ public class District {
         this.name = name;
         this.collector = collector;
     }
-    public void districInfo(){
+    public void districtInfo(){
         System.out.println("District Name:"+this.name);
         collector.collectorInfo();
     }
