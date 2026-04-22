@@ -40,7 +40,6 @@ public class CountryRunner {
         State state = new State("Karnataka", 6.91, cities);
 
         Address address = new Address(2, "577215", state);
-
         President president = new President("Droupadi Murmu", 72, address);
 
         State[] states = {state};

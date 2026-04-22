@@ -15,8 +15,9 @@ public class State {
         System.out.println("State Name:" + this.name);
         System.out.println("State Population:" + this.population);
         for (City city : cities) {
-            if (city != null)
+            if (city != null) {
                 city.cityInfo();
+            }
         }
     }
 
