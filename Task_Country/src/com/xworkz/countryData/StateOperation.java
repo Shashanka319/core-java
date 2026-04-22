@@ -50,7 +50,7 @@ public class StateOperation {
                 if(city!=null){
                     System.out.println("Number of District is not Zero so proceed to check");
                     if(city.name.equals(cityName)){
-                       city.districtInfo();
+                       city.cityInfo();
                        return false;
                     }
 

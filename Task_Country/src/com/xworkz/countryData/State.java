@@ -10,11 +10,12 @@ public class State {
         this.population = population;
         this.cities = cities;
     }
-    public void stateInfo(){
-        System.out.println("State Name:"+this.name);
-        System.out.println("State Population:"+this.population);
-        for(City city:cities){
-            if(city!=null)
+
+    public void stateInfo() {
+        System.out.println("State Name:" + this.name);
+        System.out.println("State Population:" + this.population);
+        for (City city : cities) {
+            if (city != null)
                 city.cityInfo();
         }
     }
@@ -23,8 +24,4 @@ public class State {
     public String toString() {
         return this.name;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> ba47bc0 (Task-updated)
 }

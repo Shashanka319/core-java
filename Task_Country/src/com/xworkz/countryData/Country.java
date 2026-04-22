@@ -10,16 +10,13 @@ public class Country {
         this.president = president;
         this.states = states;
     }
-    public void countryInfo(){
-        System.out.println("Country Name:"+this.name);
-        System.out.println("Country President:"+this.president);
-        for(State state:states){
-            if(state!=null)
+
+    public void countryInfo() {
+        System.out.println("Country Name:" + this.name);
+        System.out.println("Country President:" + this.president);
+        for (State state : states) {
+            if (state != null)
                 state.stateInfo();
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> ba47bc0 (Task-updated)
     }
 }
