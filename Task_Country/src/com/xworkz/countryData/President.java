@@ -14,7 +14,7 @@ public class President {
         System.out.println("President Name:"+this.name);
         System.out.println("Prsident Age:"+this.age);
         if(address!=null){
-            System.out.println("Adress:"+this.address);
+            System.out.println("Adress:"+address.toString());
             address.info();
         }
     }

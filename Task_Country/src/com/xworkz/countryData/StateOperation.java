@@ -64,17 +64,18 @@ public class StateOperation {
         if(collectorName!=null){
             for(Collector collector:this.colectors){
                 if(collector!=null){
-                    System.out.println("Collector is not null so proceed to Search");
-                    if(collector.name==collectorName){
+                    if(collector.name.equals(collectorName)){
                         System.out.println("Collector Name is Found ,below the Country Information:"+collectorName);
                         for(Country country:this.countries){
                             if(country!=null)
                             country.countryInfo();
                         }
+                        return true;
                     }
                 }
             }
         }
+        System.out.println("Collector Name is not Found: " + collectorName);
         return false;
     }
 

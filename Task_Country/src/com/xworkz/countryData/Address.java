@@ -18,4 +18,9 @@ public class Address {
         this.state.stateInfo();
     }
 
+    @Override
+    public String toString() {
+        return "Address{no=" + this.no + ", pincode='" + this.pincode + "', state=" + this.state + "}";
+    }
+
 }
