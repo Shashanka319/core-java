@@ -1,0 +1,105 @@
+class Product {
+    private int productId;
+    private String productName;
+    private double price;
+    private int quantityAvailable;
+    private String category;
+    private double discountPercentage;
+
+    // Parameterized constructor using 'this' keyword
+    public Product(int productId, String productName, double price, int quantityAvailable, String category, double discountPercentage) {
+        this.productId = productId;
+        this.productName = productName;
+        this.price = price;
+        this.quantityAvailable = quantityAvailable;
+        this.category = category;
+        this.discountPercentage = discountPercentage;
+    }
+
+    // Getters
+    public int getProductId() { return productId; }
+    public String getProductName() { return productName; }
+    public double getPrice() { return price; }
+    public int getQuantityAvailable() { return quantityAvailable; }
+    public String getCategory() { return category; }
+    public double getDiscountPercentage() { return discountPercentage; }
+
+    // Calculate price after standard discount
+    public double calculateDiscountedPrice() {
+        return price * (1 - discountPercentage / 100);
+    }
+
+    // Version 1: Regular addToCart
+    public double addToCart(int quantity) {
+        if (quantity <= quantityAvailable) {
+            this.quantityAvailable -= quantity;
+            return calculateDiscountedPrice() * quantity;
+        }
+        return -1;
+    }
+
+    // Version 2: Overloaded addToCart with Bulk Purchase rules
+    public double addToCart(int quantity, boolean isBulkPurchase) {
+        if (quantity > 20) {
+            return -2; // Bulk limit exceeded
+        }
+        
+        if (quantity <= quantityAvailable) {
+            double finalPricePerUnit = calculateDiscountedPrice();
+            
+            // Apply additional 5% discount for bulk
+            if (isBulkPurchase && quantity >= 10) {
+                finalPricePerUnit *= 0.95; 
+            }
+            
+            this.quantityAvailable -= quantity;
+            return finalPricePerUnit * quantity;
+        }
+        
+        return -1; // Insufficient quantity
+    }
+}
+import java.util.ArrayList;
+
+class ShoppingCart {
+    private int cartId;
+    private String customerName;
+    private ArrayList<String> itemizedList; // Stores strings of product details for the bill
+    private double totalAmount;
+
+    public ShoppingCart(int cartId, String customerName) {
+        this.cartId = cartId;
+        this.customerName = customerName;
+        this.itemizedList = new ArrayList<>();
+        this.totalAmount = 0;
+    }
+
+    public void addProductToCart(Product product, int quantity, boolean isBulk) {
+        double result = product.addToCart(quantity, isBulk);
+
+        if (result == -1) {
+            System.out.println("Error: Insufficient stock for " + product.getProductName());
+        } else if (result == -2) {
+            System.out.println("Error: Bulk limit exceeded for " + product.getProductName() + " (Max 20)");
+        } else {
+            totalAmount += result;
+            String detail = String.format("%-15s | Qty: %-3d | Unit Price: %-8.2f | Total: %.2f", 
+                            product.getProductName(), quantity, product.getPrice(), result);
+            itemizedList.add(detail);
+            System.out.println("Added " + quantity + " " + product.getProductName() + " to cart.");
+        }
+    }
+
+    public void generateBill() {
+        System.out.println("\n---------- E-COMMERCE BILL ----------");
+        System.out.println("Customer: " + customerName);
+        System.out.println("Cart ID: " + cartId);
+        System.out.println("-------------------------------------");
+        for (String item : itemizedList) {
+            System.out.println(item);
+        }
+        System.out.println("-------------------------------------");
+        System.out.printf("FINAL TOTAL AMOUNT: $%.2f\n", totalAmount);
+        System.out.println("-------------------------------------\n");
+    }
+}

@@ -1,0 +1,12 @@
+public class RideFareRunner {
+    public static void main(String[] args) {
+        
+        RideFareCalculator ride1 = new RideFareCalculator(1.5, 14, false, 0);
+        RideFareCalculator ride2 = new RideFareCalculator(10.0, 8, false, 5);
+        RideFareCalculator ride3 = new RideFareCalculator(5.0, 0, true, 4);
+
+        System.out.println("Scenario 1 Final Fare: " + ride1.calculateFinalFare());
+        System.out.println("Scenario 2 Final Fare: " + ride2.calculateFinalFare());
+        System.out.println("Scenario 3 Final Fare: " + ride3.calculateFinalFare());
+    }
+}
