@@ -1,0 +1,35 @@
+class File{ 
+	int numberOfFile;
+	String name;
+	double fileSize;
+	boolean javaFile;
+	boolean timeModified;;
+	FileType type;
+	FileName name;
+	FileSort sort;
+	FileView view;
+	FileDetailes detailes;
+	
+	File(int numberOfFile,String name,double fileSize,boolean javaFile,boolean timeModified,
+	FileType type,FileName name,FileSort sort,FileView view,FileDetailes detailes)
+	{
+			this.numberOfFile=numberOfFile;
+			this.fileName=fileName;
+			this.fileSize=fileSize;
+			this.javaFile=javaFile;
+			this.timeModified=timeModified;
+			this.type=type;
+			this.name=name;
+			this.sort=sort;
+			this.view=view;
+			this.detailes=detailes;
+			System.out.println("Access the above primitive and non Primitive instance variables");
+	}
+	void getInfo(){
+		System.out.println("File Information:"+this.fileName);
+	}
+	
+	
+	
+	
+}

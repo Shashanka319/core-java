@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karnataka</title>
+</head>
+
+<body>
+
+<h1>KARNATAKA</h1>
+
+<p>
+<b>Karnataka</b> is a beautiful state located in the southern part of India. 
+It is known for its rich culture, historical monuments, and natural beauty. 
+The capital city of Karnataka is <b>Bengaluru</b>, which is also called the 
+<i>Silicon Valley of India</i> because of its large number of technology companies.
+
+Karnataka has many famous tourist places such as 
+<b>Mysore Palace</b>, <b>Hampi</b>, and <b>Jog Falls</b>. 
+The state is also known for its traditional music, dance, and delicious food. 
+Karnataka plays an important role in India's economy because of its 
+industries, education institutions, and IT sector.
+
+The state has a long history and was ruled by powerful dynasties such as the 
+Chalukyas, Hoysalas, and the Vijayanagara Empire. Today, Karnataka is one of 
+the most developed states in India and attracts tourists from all over the world.
+</p>
+
+<a href="https://en.wikipedia.org/wiki/Karnataka" target="_blank">Wikipedia</a>
+
+<br><br>
+
+<img src="vidhansoudha.png"
+alt="Vidhana Soudha" height="300" width="454">
+
+<br><br>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mysore_Palace_Morning.jpg"
+alt="Mysore Palace" height="300" width="454">
+
+<br><br>
+
+<video height="300" width="454" controls>
+    <source src="vidhansoudha.mp4.mp4" type="video/mp4" controls autoplay muted>
+</video>
+
+<br><br>
+
+<video height="300" width="454" controls>
+    <source src="https://www.pexels.com/download/video/5049370/" type="video/mp4"controls autoplay muted>
+</video>
+
+</body>
+</html>

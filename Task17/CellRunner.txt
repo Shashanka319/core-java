@@ -1,0 +1,33 @@
+class CellRunner {
+    public static void main(String[] args) {
+        Cell c1 = new Cell(1, "Neuron", "Eukaryotic", "Human", 100.0, 50, true, false, "Glucose", 30000.0, "None", 75.0f, 46, "Phospholipid", false, 300.0, "Vesicle", "Microtubules", false, "1837");
+        c1.display();
+
+        Cell c2 = new Cell(2, "Red Blood Cell", "Eukaryotic", "Human", 7.5, 0, false, false, "Glucose", 120.0, "None", 65.0f, 0, "Phospholipid", false, 0.5, "None", "Actin", false, "1658");
+        c2.display();
+
+        Cell c3 = new Cell(3, "Leaf Mesophyll", "Eukaryotic", "Oak Tree", 30.0, 100, true, true, "Sunlight", 180.0, "Mitosis", 90.0f, 24, "Phospholipid", false, 10.0, "Vacuole", "Actin", true, "1665");
+        c3.display();
+
+        Cell c4 = new Cell(4, "E. coli", "Prokaryotic", "Bacteria", 2.0, 10, false, true, "Glucose", 0.02, "Binary Fission", 70.0f, 1, "Lipopolysaccharide", true, 0.1, "Inclusion Body", "FtsZ", false, "1885");
+        c4.display();
+
+        Cell c5 = new Cell(5, "Sperm Cell", "Eukaryotic", "Human", 50.0, 25, true, false, "Fructose", 3.0, "Meiosis", 60.0f, 23, "Phospholipid", true, 2.0, "None", "Microtubules", false, "1677");
+        c5.display();
+
+        Cell c6 = new Cell(6, "Egg Cell (Ovum)", "Eukaryotic", "Human", 120.0, 200, true, false, "Glucose", 1.0, "Meiosis", 80.0f, 23, "Phospholipid", false, 5.0, "Cytoplasm", "Actin", false, "1827");
+        c6.display();
+
+        Cell c7 = new Cell(7, "Muscle Fiber", "Eukaryotic", "Human", 2000.0, 1000, true, false, "ATP", 5000.0, "None", 72.0f, 46, "Phospholipid", false, 500.0, "Sarcoplasmic Reticulum", "Actin/Myosin", false, "1840");
+        c7.display();
+
+        Cell c8 = new Cell(8, "Adipocyte", "Eukaryotic", "Human", 80.0, 30, true, false, "Lipids", 3650.0, "Mitosis", 15.0f, 46, "Phospholipid", false, 1.0, "Fat Droplet", "Intermediate Filaments", false, "1840");
+        c8.display();
+
+        Cell c9 = new Cell(9, "Amoeba Proteus", "Eukaryotic", "Amoeba", 500.0, 60, true, false, "Small Organisms", 20.0, "Binary Fission", 95.0f, 500, "Phospholipid", true, 50.0, "Contractile Vacuole", "Actin", false, "1755");
+        c9.display();
+
+        Cell c10 = new Cell(10, "Root Hair Cell", "Eukaryotic", "Plant", 150.0, 80, true, true, "Glucose", 15.0, "None", 85.0f, 20, "Phospholipid", false, 8.0, "Large Vacuole", "Actin", false, "1682");
+        c10.display();
+    }
+}

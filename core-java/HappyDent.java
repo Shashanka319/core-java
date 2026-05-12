@@ -1,0 +1,32 @@
+class HappyDent{
+	String[] flovors;
+	String[] shapes;
+	String brandName;
+	String productVariant;
+	long barcode;
+	String Manufacture;
+	String color;
+	double weightPerPiece;
+	int piecesPerPack;
+	String packagingType;
+	double packWidth;
+	double packheight;
+	boolean isCenterFilled;
+	boolean isSugarFree;
+	boolean isColorian;
+	boolean isVegitiriean;
+	double caloriCount;
+	String coatingType;
+	String allergens;
+	boolean containsActiveCorbon;
+	double mrp;
+	double wholesalePrice;
+	String currency;
+	int stackQuantity;
+	String shelfLocation;
+	int discountPer;
+	int lifeMonth;
+	int lifeYear;
+	String quality;
+	boolean isHealthy;
+}

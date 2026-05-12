@@ -1,0 +1,15 @@
+1) Create a file , in index.html take 5 input's 
+	name ,USN , Phno , email , address 
+	with their unique id's.
+	
+2) add onClick function to each input field
+
+3) when u click on submit u should get a alert and console message 
+	saying (Entered name ..,entered email);
+	
+	
+	Explain about Object In Java
+	
+		--> Object is a class refers to root Hirarchy of every class
+		--> Object class acts as a Parent class of Every class
+			means 

@@ -1,0 +1,61 @@
+class States{
+	public static void main(String[] args){
+		String state= "Andra Pradesh";
+		System.out.println(state);
+		state= "Arunachal Pradeshh";
+		System.out.println(state);
+		state= "Assaam";
+		System.out.println(state);
+		state= "Bihar";
+		System.out.println(state);
+		state= "Chattisgarh";
+		System.out.println(state);
+		state= "Goa";
+		System.out.println(state);
+		state= "Gujaraj";
+		System.out.println(state);
+		state= "Hariyan";
+		System.out.println(state);
+		state= "Himachal Pradesh";
+		System.out.println(state);
+		state= "Jarkhand";
+		System.out.println(state);
+		state= "Karnataka";
+		System.out.println(state);
+		state= "Kerala";
+		System.out.println(state);
+		state= "Madhya Pradesh";
+		System.out.println(state);
+		state= "MahaRashtra";
+		System.out.println(state);
+		state= "Manipur";
+		System.out.println(state);
+		state= "Meghalaya";
+		System.out.println(state);
+		state= "Mizoram";
+		System.out.println(state);
+		state= "Nagalyand";
+		System.out.println(state);
+		state= "Odisha";
+		System.out.println(state);
+		state= "Punjab";
+		System.out.println(state);
+		state= "Rajasthan";
+		System.out.println(state);
+		state= "Sikkim";
+		System.out.println(state);
+		state= "Tamil Nadu";
+		System.out.println(state);
+		state= "Telangana";
+		System.out.println(state);
+		state= "Uttar Pradesh";
+		System.out.println(state);
+		state= "UttarKhand";
+		System.out.println(state);
+		state= "West Bengal";
+		System.out.println(state);
+		state= "Tripura";
+		System.out.println(state);
+		
+	}
+}

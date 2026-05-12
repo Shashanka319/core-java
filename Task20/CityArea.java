@@ -1,0 +1,6 @@
+enum CityArea {
+    RAJAJINAGAR,
+    JAYANAGAR,
+    WHITEFIELD,
+    ELECTRONIC_CITY
+}
