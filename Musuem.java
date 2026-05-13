@@ -7,7 +7,7 @@ class Musuem{
 		this.name=name;
 		System.out.println("Musuem name with String COnstructor");
 	}
-	Musuem(double price){
+	Museum(double price){
 		this.price=price;
 		System.out.println("Museum Price with double Constructor...");
 	}
