@@ -1,0 +1,71 @@
+-> do-while // first print acc to given then check  given condition, untill condition satiesfied it will looping otherwise exist from loop
+-> while // first check given condition then print it,untill condition satiesfied it will looping otherwise exist from loop
+->if // one condition is true then execute inside this scope
+->else // condition is false the execute inside this scope(alternative)
+->elseif // check the more than one conditions 
+->nested if // check the conditions and check again inside the conditions
+->switch //incase there are multiple condition then use this switch key word to perform it.
+
+// general syntax of all Condition Statements
+
+Statement;
+do{
+	if(condition){
+		statement;
+	}
+	elseif(condition){
+		if(condition){
+			Statement;
+			if(condition){
+				Statement;
+				while(condition){
+					Statement;
+					++;
+				}
+				Statement;
+			}
+		}else{
+			Statement;.
+		}
+	
+	}
+	elseif(condition){
+		Statement;
+	}
+	else{
+		Statement;
+	}
+}while(condition)
+
+
+// syntax of switch Conditions
+
+Statement;
+switch(Statement){
+	case1:
+		Satement;
+		break;
+	case2:
+		Statement;
+		break;
+	.
+	.
+	.
+	.
+	case n:
+		Statement;
+		break;
+}
+for(condition){
+	Statement;
+}
+Statement;
+while(condition){
+	Statement;
+	++;
+}
+do{
+	Statement;
+	++;
+}
+while(condition);

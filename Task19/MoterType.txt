@@ -1,0 +1,5 @@
+class MoterType{
+	String type;
+	int numberOfMotor;
+	
+}
