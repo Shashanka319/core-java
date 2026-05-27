@@ -1,1 +1,1 @@
-# core-java
+# java-intellij
